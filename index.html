@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+    rel="stylesheet">
+  <script src="/script.js"></script>
+
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="calculator">
+    <div class="formulario">
+      <div class="day">
+        <label for="day">Day</label>
+        <input type="number" id="day" name="day" min="1" max="31" required>
+        <span id="day-error" class="error error-message"></span>
+      </div>
+      <div class="month">
+        <label for="month">Month</label>
+        <input type="number" id="month" name="month" min="1" max="12" required>
+        <span id="month-error" class="error error-message"></span>
+      </div>
+      <div class="year">
+        <label for="year">Year</label>
+        <input type="number" id="year" name="year" min="1900" required>
+        <span id="year-error" class="error error-message"></span>
+      </div>
+    </div>
+    <div class="line">
+      <div class="divider"></div>
+      <input class="arrow" type="image" src="/assets/images/icon-arrow.svg" alt="Enviar" onclick="enviarFormulario()">
+    </div>
+  
+    <div class="results">
+      <span id="years"><span class="number">--</span> years</span><br>
+      <span id="months"><span class="number">--</span> months</span><br>
+      <span id="days"><span class="number">--</span> days</span><br>
+    </div>
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Edward Arana</a>.
+  </div>
+</body>
+
+</html>

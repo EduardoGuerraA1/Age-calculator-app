@@ -1,0 +1,127 @@
+body {
+    background-color: lightgray;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 5%;
+  }
+  
+  label {
+    text-transform: uppercase;
+  }
+  
+  .calculator {
+    background-color: white;
+    border-radius: 30px 30px 200px 30px;
+    padding: 40px;
+    width: 800px;
+    height: 480px;
+  }
+  
+  .formulario {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-right: 25%;
+  }
+  
+  .day,
+  .year,
+  .month {
+    display: inline-grid;
+    justify-items: stretch;
+  }
+  
+  input {
+    font-size: 32px;
+    font-weight: 600;
+    height: 50px;
+    max-width: 6ch;
+  }
+  
+  input[type="number"] {
+    color: black;
+  }
+  
+  input[type="number"]:focus {
+    color: hsl(259, 100%, 65%);
+    border-color: hsl(259, 100%, 65%);
+  }
+  
+  .error input[type="number"] {
+    color: red;
+  }
+  
+  .arrow {
+    height: 50px;
+    background: hsl(259, 100%, 65%);
+    border-radius: 50%;
+    margin: 1%;
+    padding: 1%;
+  }
+  
+  .number {
+    color: hsl(259, 100%, 65%);
+    font-weight: bolder;
+    font-size: 50px;
+  }
+  
+  .letters {
+    font-weight: bolder;
+    font-size: 50px;
+  }
+  
+  .results {
+    font-weight: 700;
+    font-size: 50px;
+    padding-left: 9%;
+    font-style: italic;
+  }
+  
+  .error {
+    color: red;
+    font-size: 12px;
+    display: none;
+    margin-top: 5px;
+  }
+  
+  .divider {
+    width: 73%;
+    height: 1px;
+    background-color: lightgray;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .day {
+    position: relative;
+  }
+  
+  .month {
+    position: relative;
+  }
+  
+  .year {
+    position: relative;
+  }
+
+  .line{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .error {
+    color: red;
+    font-size: 12px;
+    display: none;
+    margin-top: 5px;
+  }
+  
+  .error-message {
+    display: block;
+  }
+  
+
+  
